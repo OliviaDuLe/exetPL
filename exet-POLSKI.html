@@ -53,6 +53,21 @@ exetConfig = {
 <script src="exet-storage.js"></script>
 <script src="exet.js"></script>
 <script src="exet-lexicon.js"></script>
+<script>
+    // Sprawdzenie, czy exetLexicon jest załadowany
+    console.log("exetLexicon:", exetLexicon);
+
+    // Inicjalizacja Exet w kontenerze
+    if (typeof Exet !== "undefined" && exetLexicon) {
+      const exet = new Exet({
+        container: "exet-container",
+        lexicon: exetLexicon
+      });
+      exet.init();
+    } else {
+      console.error("Exet lub exetLexicon nie jest dostępny!");
+    }
+  </script>
 
 
 <title>Tworzenie Krzyzowek po polsku</title>
