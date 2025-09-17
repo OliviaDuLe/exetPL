@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <title>Test Exet Lexicon</title>
+  <meta charset="UTF-8">
+  <title>Exet Polski Test</title>
+
+  <!-- Twój polski słownik -->
+  <script src="pl.js"></script>
+
+  <!-- Silnik Exet -->
+  <script src="exet.js"></script>
+
+  <!-- Style Exet -->
+  <link rel="stylesheet" href="exolve-m.css">
 </head>
 <body>
-  <script src="pl.js"></script>
-  <script src="exet.js"></script>
+  <h1>Test Exet Polski</h1>
+  <div id="exet-container"></div>
+
   <script>
-    console.log("exetLexicon dostępny:", exetLexicon);
+    // Sprawdzenie, czy exetLexicon jest załadowany
+    console.log("exetLexicon:", exetLexicon);
+
+    // Inicjalizacja Exet w kontenerze
+    if (typeof Exet !== "undefined" && exetLexicon) {
+      const exet = new Exet({
+        container: "exet-container",
+        lexicon: exetLexicon
+      });
+      exet.init();
+    } else {
+      console.error("Exet lub exetLexicon nie jest dostępny!");
+    }
   </script>
 </body>
 </html>
