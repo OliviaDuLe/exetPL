@@ -2,10 +2,8 @@ exetLexicon = {
   "id": "Lufz-pl-v0.01",
   "language": "pl",
   "script": "Latin",
-  "letters": ["A","Ą","B","C","Ć","D","E","Ę","F","G","H","I","J","K","L","Ł","M","N","Ń","O","Ó","P","Q","R","S","Ś","T","U","V","W","X","Y","Z","Ź","Ż"],
-  "lexicon": [
-    "a", "ab", "abc", "ad", "ala", "auto", "bal", "dom", "eko", "fin"
-  ],
+  "letters": ["A","Ą","B","C","Ć"],
+  "lexicon": ["a","ab","ala","auto"],
   "index": {},
   "phindex": []
 };
