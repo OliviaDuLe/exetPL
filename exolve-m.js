@@ -278,7 +278,7 @@ function Exolve(puzzleSpec,
    * Font details for clues text.
    * If fontFamily/fontSize are not set, the CSS rule sets them to serif/16px.
    */
-  this.fontFamily = '';
+  this.fontFamily = "Montserrat";
   this.fontSize = '';
 
   this.smartColoring = true;
